@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.front-page {
+    background: linear-gradient(54deg, #0c3866 34%, #4a4cb3);
+}
+
+#navigation-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration-line: underline;
+}
+
+li a#home {
+    font-size: 18px;
+}
+
+.container  {
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+#message    {
+    margin: auto;
+    padding: 0 15px;
+    width: 50%;
+}
+
+#login-panel {
+    padding: 20px 15px;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    border: white;
+    border-radius: 8px;
+}
+
+#message-large, #message-smell  {
+    padding: 5px 0;
+}
+
+#message1  {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#message2  {
+    color: white;
+    font-size: 14px;
+}
+
+h2 {
+    margin: 12px 0;
+    color: #0c3866;
+    position: relative;
+    background-color: white;
+    font-weight: bold;
+}
+
+label {
+    color: #0c3866;
+}
+
+input[type=text], input[type=password] {
+    background-color: white;
+}
+
+input[type=submit] {
+    padding: 4px 0;
+    background-color: #f6f1f1;
+}
+
+input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: calc(100% - 10px);
+}
+
+#about  {
+    padding: 15px 15px;
+}
+#about h3   {
+    border-left: 6px solid;
+    border-color: #4a4cb3;
+    padding-left: 8px;
+}
+
+#about-image  {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-image: url("https://www.ajspi.com/wp-content/uploads/2019/11/undraw_team_spirit_hrr4-1170x866.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
