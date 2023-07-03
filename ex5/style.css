@@ -13,6 +13,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
 .front-page {
     background: linear-gradient(54deg, #0c3866 34%, #4a4cb3);
 }
@@ -21,7 +29,14 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 50px;
+    z-index: 99;
     overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #0c3866;
 }
 
 li {
@@ -35,10 +50,10 @@ li a {
     font-weight: bold;
     text-decoration: none;
 }
-li a:hover {
+li #nav-home:hover, #nav-about:hover {
     text-decoration-line: underline;
 }
-li a#home {
+li #fsse {
     font-size: 18px;
 }
 
@@ -46,7 +61,7 @@ li a#home {
     height: 100vh;
     padding: 0 20px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
 }
 
@@ -102,6 +117,7 @@ li a#home {
     padding: 15px 15px;
 }
 #about h3   {
+    margin: 50px 0 0 0;
     border-left: 6px solid;
     border-color: #4a4cb3;
     padding-left: 8px;
@@ -111,7 +127,7 @@ li a#home {
     margin: auto;
     height: 300px;
     width: 300px;
-    background-image: url("https://www.ajspi.com/wp-content/uploads/2019/11/undraw_team_spirit_hrr4-1170x866.png");
+    background-image: url("../img/team_spirit.svg");
     background-size: 300px;
     background-repeat: no-repeat;
 }
