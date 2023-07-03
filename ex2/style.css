@@ -21,7 +21,7 @@ body {
     align-items: baseline;
 }
 
-#message    {
+#message-block    {
     margin: auto;
     padding: 0 15px;
     width: 50%;
